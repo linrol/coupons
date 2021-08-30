@@ -21,7 +21,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         http.apply(new SocialConfigurer());
         http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/st/**", "/mi/**", "/auth/**", "/favicon.ico", "/login", "/logout")
+                .antMatchers("/coupon/api/st/**", "/coupon/api/mi/**", "/coupon/api/auth/**", "/coupon/api/favicon.ico", "/coupon/api/login", "/coupon/api/logout")
                 .permitAll()
                 .anyRequest().authenticated()
                 .and()
