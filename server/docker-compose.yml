@@ -22,7 +22,7 @@ services:
     environment:
       - JAVA_OPTS=-Xmx512m -Xms256m -XX:MetaspaceSize=64M -XX:MaxMetaspaceSize=256M
     entrypoint:
-      java ${JAVA_OPTS} -jar ${JOB_BASE_NAME}.jar
+      java ${JAVA_OPTS} -Ddataoke.appKey=612c6a2e0bd07 -Ddataoke.appSecret=51051d602280c91fe2f03452de065d63 -Dspring.datasource.username=root -Dspring.datasource.password=19941208 -Dspring.redis.password=linrol_redis -jar ${JOB_BASE_NAME}.jar --spring.profiles.active=dev
     deploy:
       resources:
         limits:
