@@ -1,0 +1,32 @@
+#
+# Author:linrol
+#
+
+version: '3'
+
+services:
+  coupon:
+    build:
+      context: .
+      args:
+        - PROJ_NAME=$JOB_BASE_NAME
+      dockerfile: Dockerfile
+    image: coupon
+    container_name: coupon
+    ports:
+      - 8074:8074
+    restart: always
+    volumes:
+      - /root/web/app/coupon/:/root/web/app/coupon/
+      - /usr/local/java/jdk1.8.0_201/:/usr/local/java/jdk1.8.0_201/
+    environment:
+      - JAVA_OPTS=-Xmx512m -Xms256m -XX:MetaspaceSize=64M -XX:MaxMetaspaceSize=256M
+    entrypoint:
+      java ${JAVA_OPTS} -jar ${JOB_BASE_NAME}.jar
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 768M
+        reservations:
+          memory: 256M
