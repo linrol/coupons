@@ -1,3 +1,3 @@
 module.exports = {
-    APIHOST: "http://localhost:9090"
+    APIHOST: "http://coupon.alinkeji.com/coupon/api"
 }

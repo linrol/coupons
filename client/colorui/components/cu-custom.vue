@@ -74,7 +74,7 @@
                     }
                 }
                 if (getCurrentPages().length < 2) {
-                    let url = '/pages/collocation/index'
+                    let url = '/pages/index/index'
                     return uni.switchTab({
                         url
                     })

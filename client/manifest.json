@@ -1,6 +1,6 @@
 {
     "name" : "FASHION",
-    "appid" : "__UNI__AA9534D",
+    "appid" : "__UNI__336941A",
     "description" : "我不塑造时尚，我就是时尚",
     "versionName" : "1.6.1",
     "versionCode" : 161,
@@ -169,10 +169,11 @@
         "uniStatistics" : {
             "enable" : false
         },
-        "domain" : "http://m.szjx.top",
-        "title" : "FASHION搭配助手",
+        "domain" : "http://coupon.alinkeji.com",
+        "title" : "小林当铺",
         "router" : {
-            "mode" : "hash"
+            "mode" : "history",
+            "base" : "/coupon/h5/"
         }
     },
     "mp-alipay" : {

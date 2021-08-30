@@ -87,7 +87,7 @@
 
 		<!-- 底部操作菜单 -->
 		<view class="page-bottom">
-			<navigator url="/pages/collocation/index" open-type="switchTab" class="p-b-btn">
+			<navigator url="/pages/index/index" open-type="switchTab" class="p-b-btn">
 				<text class="icon icon-home text-xxl"></text>
 				<text>首页</text>
 			</navigator>

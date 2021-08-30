@@ -1,17 +1,13 @@
 {
   "pages": [
-    {
-      "path": "pages/collocation/index",
-      "style": {}
-    },
+	{
+	  "path": "pages/index/index",
+	  "style": {
+	  }
+	},
     {
       "path": "pages/collocation/detail",
       "style": {}
-    },
-    {
-      "path": "pages/index/index",
-      "style": {
-      }
     },
     {
       "path": "pages/webview/index",
@@ -97,7 +93,7 @@
     "selectedColor": "#000000",
     "list": [
       {
-        "pagePath": "pages/collocation/index",
+        "pagePath": "pages/index/index",
         "iconPath": "static/tab/home.png",
         "text": "",
         "selectedIconPath": "static/tab/home_cur.png"
@@ -108,12 +104,7 @@
         "text": "",
         "selectedIconPath": "static/tab/circle_cur.png"
       },
-      {
-        "pagePath": "pages/index/index",
-        "iconPath": "static/tab/shop.png",
-        "text": "",
-        "selectedIconPath": "static/tab/shop_cur.png"
-      },
+   
       {
         "pagePath": "pages/user/user",
         "iconPath": "static/tab/my.png",
