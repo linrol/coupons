@@ -155,6 +155,7 @@
     </repositories>
 
     <build>
+        <finalName>coupon</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
