@@ -13,7 +13,7 @@ import java.util.TreeMap;
 @Component
 public class PrivilegeApi extends AbstractDaTaoKeApi {
     private static final String url = "https://openapi.dataoke.com/api/tb-service/get-privilege-link";
-    private static final String pid = "mm_55354930_1527000006_110255950161";
+    private static final String pid = "mm_109302870_2344500127_111430000352";
     public PrivilegeApi(DaTaoKeProperties daTaoKeProperties) {
         super(daTaoKeProperties);
     }
