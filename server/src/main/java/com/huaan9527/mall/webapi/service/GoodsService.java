@@ -89,7 +89,7 @@ public class GoodsService {
             params.put("PriceCid", "3");
             JSONObject data = explosiveGoodsListApi.get(params);
             operations.set(getRecommendGoodsKey(page), data.toJSONString());
-            redisTemplate.expire(getRecommendGoodsKey(page), 2, TimeUnit.HOURS);
+            redisTemplate.expire(getRecommendGoodsKey(page), 2, TimeUnit.MINUTES);
             return data;
         }
         return JSON.parseObject(cachedRecommendGoods);
