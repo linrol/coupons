@@ -86,7 +86,7 @@ public class GoodsService {
             Map<String, String> params = new HashMap<>();
             params.put("pageId", page.toString());
             params.put("pageSize", size.toString());
-            params.put("PriceCid", "3");
+            params.put("PriceCid", "2");
             JSONObject data = explosiveGoodsListApi.get(params);
             operations.set(getRecommendGoodsKey(page), data.toJSONString());
             redisTemplate.expire(getRecommendGoodsKey(page), 2, TimeUnit.MINUTES);
