@@ -1,3 +1,3 @@
 module.exports = {
-    APIHOST: "http://coupon.alinkeji.com/coupon/api"
+    APIHOST: "https://coupon.alinkeji.com/coupon/api"
 }

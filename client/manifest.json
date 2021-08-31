@@ -1,5 +1,5 @@
 {
-    "name" : "FASHION",
+    "name" : "小林典当铺",
     "appid" : "__UNI__336941A",
     "description" : "我不塑造时尚，我就是时尚",
     "versionName" : "1.6.1",
@@ -140,7 +140,7 @@
         }
     },
     "mp-qq" : {
-        "appid" : "",
+        "appid" : "1112095200",
         "setting" : {
             "minified" : true,
             "es6" : true,
@@ -169,7 +169,7 @@
         "uniStatistics" : {
             "enable" : false
         },
-        "domain" : "http://coupon.alinkeji.com",
+        "domain" : "https://coupon.alinkeji.com",
         "title" : "小林当铺",
         "router" : {
             "mode" : "history",
