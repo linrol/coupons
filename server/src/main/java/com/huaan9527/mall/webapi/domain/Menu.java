@@ -21,5 +21,5 @@ public class Menu extends AbstractDomain<Long> {
     private int status; //0 禁用 1启用
     private String title;
     private int top;
-    private String urlType = Urlype.H5.name();
+    private String urlType = Urlype.Native.name();
 }
