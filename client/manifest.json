@@ -170,7 +170,7 @@
             "enable" : false
         },
         "domain" : "https://coupon.alinkeji.com",
-        "title" : "小林当铺",
+        "title" : "小林典当铺",
         "router" : {
             "mode" : "history",
             "base" : "/coupon/h5/"
