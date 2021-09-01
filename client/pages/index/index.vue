@@ -108,7 +108,7 @@ export default {
 			let result = await this.$api.backend.recommendGoods(this.page++);
 			let list = result.data.list || [];
 			this.goodsList = this.goodsList.concat(list);
-			this.loadingType = list.length === 0 || list.length < 50 ? 'nomore' : 'more';
+			this.loadingType = list.length === 0 || list.length < 20 ? 'nomore' : 'more';
 		},
 		//轮播图切换修改背景色
 		swiperChange(e) {

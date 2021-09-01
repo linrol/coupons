@@ -20,7 +20,7 @@ public class GoodsController {
 
     @GetMapping("/load_recommend_goods")
     public ResponseEntity recommendGoods(Integer page) {
-        return ResponseEntity.success(goodsService.recommendGoods(page, 50));
+        return ResponseEntity.success(goodsService.recommendGoods(page, 20));
     }
 
     @GetMapping("/load_nine_goods")
