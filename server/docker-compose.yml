@@ -20,7 +20,7 @@ services:
       - /root/web/app/coupon/:/root/web/app/coupon/
       - /usr/local/java/jdk1.8.0_201/:/usr/local/java/jdk1.8.0_201/
     environment:
-      - JAVA_OPTS=-Xmx512m -Xms256m -XX:MetaspaceSize=64M -XX:MaxMetaspaceSize=256M
+      - JAVA_OPTS=-Xmx512m -Xms300m -XX:MetaspaceSize=64M -XX:MaxMetaspaceSize=256M
     entrypoint:
       java ${JAVA_OPTS} ${PROPERTY} -jar ${JOB_BASE_NAME}.jar --spring.profiles.active=prod
     deploy:
